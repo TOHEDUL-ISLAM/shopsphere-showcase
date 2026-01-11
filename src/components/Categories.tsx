@@ -1,52 +1,79 @@
 import { motion } from "framer-motion";
 import {
-  Shirt,
-  Watch,
-  ShoppingBag,
+  Headphones,
+  Home,
   Sparkles,
-  Footprints,
+  Dumbbell,
+  Watch,
+  Camera,
+  ChefHat,
+  Book,
 } from "lucide-react";
 
 const categories = [
   {
-    id: "outerwear",
-    name: "Outerwear",
-    count: 48,
-    icon: Shirt,
-    image: "https://images.unsplash.com/photo-1544923246-77307dd628b4?w=400&q=80",
+    id: "electronics",
+    name: "Electronics",
+    count: 248,
+    icon: Headphones,
+    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&q=80",
+    color: "from-blue-500/20",
+  },
+  {
+    id: "home",
+    name: "Home & Living",
+    count: 186,
+    icon: Home,
+    image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=400&q=80",
     color: "from-amber-500/20",
+  },
+  {
+    id: "beauty",
+    name: "Beauty",
+    count: 152,
+    icon: Sparkles,
+    image: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&q=80",
+    color: "from-rose-500/20",
+  },
+  {
+    id: "sports",
+    name: "Sports & Fitness",
+    count: 124,
+    icon: Dumbbell,
+    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80",
+    color: "from-emerald-500/20",
   },
   {
     id: "accessories",
     name: "Accessories",
-    count: 167,
+    count: 198,
     icon: Watch,
     image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&q=80",
-    color: "from-emerald-500/20",
-  },
-  {
-    id: "bags",
-    name: "Bags",
-    count: 74,
-    icon: ShoppingBag,
-    image: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400&q=80",
-    color: "from-rose-500/20",
-  },
-  {
-    id: "dresses",
-    name: "Dresses",
-    count: 52,
-    icon: Sparkles,
-    image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400&q=80",
     color: "from-purple-500/20",
   },
   {
-    id: "footwear",
-    name: "Footwear",
-    count: 93,
-    icon: Footprints,
-    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80",
-    color: "from-blue-500/20",
+    id: "photography",
+    name: "Photography",
+    count: 86,
+    icon: Camera,
+    image: "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=400&q=80",
+    color: "from-cyan-500/20",
+  },
+  {
+    id: "kitchen",
+    name: "Kitchen",
+    count: 112,
+    icon: ChefHat,
+    image: "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&q=80",
+    color: "from-orange-500/20",
+  },
+  {
+    id: "books",
+    name: "Books",
+    count: 234,
+    icon: Book,
+    image: "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400&q=80",
+    color: "from-indigo-500/20",
   },
 ];
 
@@ -63,12 +90,12 @@ const Categories = () => {
         >
           <h2 className="section-title mb-4">Shop by Category</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Browse our diverse collection of premium fashion categories
+            Explore our wide range of premium products across all categories
           </p>
         </motion.div>
 
         {/* Categories Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 md:gap-6">
           {categories.map((category, index) => {
             const Icon = category.icon;
             return (

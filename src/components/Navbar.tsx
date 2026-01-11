@@ -24,20 +24,20 @@ import AuthModal from "./AuthModal";
 
 const categories = [
   {
-    name: "Women",
-    subcategories: ["Dresses", "Tops", "Bottoms", "Outerwear", "Knitwear"],
+    name: "Electronics",
+    subcategories: ["Headphones", "Smartwatches", "Speakers", "Cameras", "Accessories"],
   },
   {
-    name: "Men",
-    subcategories: ["Shirts", "Trousers", "Jackets", "Knitwear", "Suits"],
+    name: "Home & Living",
+    subcategories: ["Lighting", "Decor", "Furniture", "Kitchen", "Bathroom"],
   },
   {
-    name: "Accessories",
-    subcategories: ["Bags", "Watches", "Jewelry", "Belts", "Scarves"],
+    name: "Beauty",
+    subcategories: ["Skincare", "Makeup", "Fragrances", "Haircare", "Wellness"],
   },
   {
-    name: "Footwear",
-    subcategories: ["Sneakers", "Boots", "Heels", "Loafers", "Sandals"],
+    name: "Sports",
+    subcategories: ["Fitness", "Running", "Yoga", "Outdoor", "Equipment"],
   },
 ];
 
@@ -89,7 +89,7 @@ const Navbar = () => {
                 </DropdownMenu>
               ))}
               <a href="#sale" className="nav-link text-sm font-medium text-destructive">
-                Sale
+                Deals
               </a>
             </div>
 
@@ -184,7 +184,7 @@ const Navbar = () => {
                   </div>
                 ))}
                 <a href="#sale" className="block font-medium text-destructive">
-                  Sale
+                  Deals
                 </a>
               </div>
             </motion.div>
